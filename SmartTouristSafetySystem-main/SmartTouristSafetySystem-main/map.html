@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>Tourist Safety System</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Map Section -->
+
+    <section class="map-section">
+
+        <h1>Live Tourist Tracking</h1>
+
+        <div id="map" class="map-box"></div>
+            Google Maps Integration Area
+        </div>
+
+    </section>
+<script>
+
+function initMap(){
+
+    const location = {
+        lat: 12.9716,
+        lng: 77.5946
+    };
+
+    const map = new google.maps.Map(
+        document.getElementById("map"),
+        {
+            zoom: 12,
+            center: location
+        }
+    );
+
+    const locations = [
+
+    {
+        lat: 12.9716,
+        lng: 77.5946,
+        title: "Tourist 1"
+    },
+
+    {
+        lat: 12.9352,
+        lng: 77.6245,
+        title: "Emergency Zone"
+    },
+
+    {
+        lat: 12.9611,
+        lng: 77.6387,
+        title: "Tourist 2"
+    }
+
+];
+
+locations.forEach(place => {
+
+    new google.maps.Marker({
+
+        position: {
+            lat: place.lat,
+            lng: place.lng
+        },
+
+        map: map,
+
+        title: place.title
+
+    });
+
+});
+}
+
+</script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+</body>
+
+</html>

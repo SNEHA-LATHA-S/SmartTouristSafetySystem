@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Mudumalai Forest Restricted Area",
+    "latitude": 11.5615,
+    "longitude": 76.5348,
+    "radius": 1000,
+    "type": "forest"
+  },
+
+  {
+    "name": "Bandipur Wildlife Zone",
+    "latitude": 11.6586,
+    "longitude": 76.6305,
+    "radius": 1200,
+    "type": "wildlife"
+  },
+
+  {
+    "name": "Elephant Movement Corridor - Valparai",
+    "latitude": 10.3269,
+    "longitude": 76.9558,
+    "radius": 900,
+    "type": "elephant_zone"
+  },
+
+  {
+    "name": "Ooty Landslide Risk Area",
+    "latitude": 11.4064,
+    "longitude": 76.6932,
+    "radius": 700,
+    "type": "landslide"
+  },
+
+  {
+    "name": "Kodaikanal Forest Risk Zone",
+    "latitude": 10.2381,
+    "longitude": 77.4892,
+    "radius": 850,
+    "type": "forest"
+  },
+
+  {
+    "name": "Silent Valley Wildlife Area",
+    "latitude": 11.0721,
+    "longitude": 76.5430,
+    "radius": 1500,
+    "type": "animal_area"
+  },
+
+  {
+    "name": "Sathyamangalam Tiger Reserve",
+    "latitude": 11.5074,
+    "longitude": 77.2383,
+    "radius": 1300,
+    "type": "wildlife"
+  },
+
+  {
+    "name": "Nilgiri Restricted Trek Zone",
+    "latitude": 11.3702,
+    "longitude": 76.7315,
+    "radius": 600,
+    "type": "restricted_area"
+  },
+
+  {
+    "name": "Munnar Hill Landslide Zone",
+    "latitude": 10.0889,
+    "longitude": 77.0595,
+    "radius": 1000,
+    "type": "landslide"
+  },
+
+  {
+    "name": "Periyar Wildlife Protection Area",
+    "latitude": 9.4627,
+    "longitude": 77.2363,
+    "radius": 1400,
+    "type": "wildlife"
+  }
+]
