@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>Tourist Safety System</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Dashboard Section -->
+
+    <section class="dashboard">
+
+        <h1>Tourist Safety Dashboard</h1>
+        <button onclick="toggleDarkMode()" class="dark-btn">
+    🌙 Dark Mode
+</button>
+        <p id="datetime"></p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2 id="tourists">120</h2>
+                <p>Total Tourists</p>
+            </div>
+
+            <div class="card">
+                <h2 id="alerts">5</h2>
+                <p>Emergency Alerts</p>
+            </div>
+
+            <div class="card">
+                <h2 id="status">98%</h2>
+                <p>Safety Status</p>
+            </div>
+            <div class="card weather-card">
+
+    <h2 id="weatherTemp">28°C</h2>
+
+    <p>🌤 Sunny Weather</p>
+
+</div>
+
+        </div>
+        
+        <div id="alertContainer" class="alert-container">
+    <p>Loading alerts...</p>
+</div>
+<div class="chart-section">
+
+    <h2>Emergency Analytics</h2>
+
+    <canvas id="alertChart"></canvas>
+
+</div>
+
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

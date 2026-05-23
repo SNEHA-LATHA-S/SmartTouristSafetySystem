@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>Tourist Safety System</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Alerts Section -->
+
+    <section class="alerts-section">
+
+        <h1>Emergency Alerts</h1>
+
+        <div class="alert-box">
+            🚨 Tourist entered restricted area
+        </div>
+
+        <div class="alert-box">
+            ⚠ SOS emergency signal received
+        </div>
+
+        <div class="alert-box">
+            📍 Suspicious movement detected
+        </div>
+
+    </section>
+<script>
+  document.querySelectorAll(".alert-box").forEach(box => {
+    box.addEventListener("click", function () {
+      alert("Alert clicked:\n" + this.innerText);
+    });
+  });
+</script>
+<!-- Popup Modal -->
+<div id="alertModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2>🚨 Alert Details</h2>
+    <p id="modalText"></p>
+  </div>
+</div>
+</body>
+
+</html>
