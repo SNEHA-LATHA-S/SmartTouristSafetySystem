@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 45px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: red;
+    color: white;
+
+    border: none;
+    padding: 15px 35px;
+
+    font-size: 18px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkred;
+}
+/* Dashboard */
+
+.dashboard{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.dashboard h1{
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s
+}
+.card:nth-child(1){
+
+    border-top: 5px solid #007bff;
+}
+
+.card:nth-child(2){
+
+    border-top: 5px solid red;
+}
+
+.card:nth-child(3){
+
+    border-top: 5px solid green;
+}
+
+.card:hover{
+
+    transform: scale(1.05);
+}
+
+.card h2{
+    color: red;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 18px;
+    color: gray;
+}
+/* Alerts Page */
+
+.alerts-section{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.alerts-section h1{
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.alert-box{
+    background-color: white;
+
+    width: 60%;
+    margin: 20px auto;
+
+    padding: 20px;
+
+    border-left: 8px solid red;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+/* Map Page */
+
+.map-section{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.map-section h1{
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.map-box{
+    width: 80%;
+    height: 400px;
+
+    margin: auto;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    color: gray;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+/* Registration Form */
+
+.form-box{
+    background-color: white;
+
+    width: 350px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+.form-box input{
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+.form-box button{
+    width: 100%;
+}
+#datetime{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+}
+#map{
+
+    height: 500px;
+
+    width: 90%;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    border: 3px solid #333;
+}
+.chart-section{
+
+    width: 60%;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px gray;
+}
+
+#alertChart{
+
+    max-height: 250px;
+}
+@media(max-width: 768px){
+
+    nav{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .cards{
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .card{
+
+        width: 80%;
+    }
+
+    #map{
+
+        width: 95%;
+        height: 400px;
+    }
+
+    .chart-section{
+
+        width: 95%;
+    }
+}
+.dark-btn{
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background: black;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+.dark-mode{
+
+    background-color: #121212;
+
+    color: white;
+}
+
+.dark-mode .card{
+
+    background-color: #1e1e1e;
+
+    color: white;
+}
+
+.dark-mode .chart-section{
+
+    background-color: #1e1e1e;
+
+    color: white;
+}
+
+.dark-mode nav{
+
+    background-color: black;
+}
+.dark-mode .alert-box{
+
+    background-color: #1e1e1e;
+
+    color: white;
+}
+.weather-card{
+
+    border-top: 5px solid orange;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+#closeModal {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
