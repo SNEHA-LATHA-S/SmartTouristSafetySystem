@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import sqlite3
@@ -88,9 +88,8 @@ def alerts():
     return jsonify(result)
 
 if __name__ == '__main__':
-=======
-from flask import Flask, request, jsonify
-
+    
+ from flask import Flask, request, jsonify
 from geo_fencing import check_danger_zone
 from movement_analysis import analyze_movement
 from ai_anomaly_detection import detect_anomaly
@@ -157,7 +156,6 @@ def analyze_tourist():
 
         "safety_score": score
     })
-
 
 if __name__ == '__main__':
     app.run(debug=True)
